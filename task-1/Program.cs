@@ -11,8 +11,10 @@ Console.Write("Введите второе число: ");
 int b = Convert.ToInt32(Console.ReadLine());
 int c;
 if (a < b){
-	c = a;
-	a = b;
-	b = c;
+    c = a;  a = b;  b = c;
 }
-Console.WriteLine($"Число {a} больше, чем {b}");
+if (a != b){
+    Console.WriteLine($"Число {a} больше, чем {b}");
+}else{
+    Console.WriteLine($"Число {a} = {b}");    
+}
